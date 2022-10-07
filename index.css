@@ -1,0 +1,458 @@
+/* global */
+:root {
+    --Dark-Blue: hsl(233, 26%, 24%);
+    --Lime-Green: hsl(136, 65%, 51%);
+    --Bright-Cyan: hsl(192, 70%, 51%);
+    --Grayish-Blue: hsl(233, 8%, 62%);
+    --Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-family: 'Public Sans', sans-serif;
+
+}
+
+html,
+body {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--White);
+}
+
+h4 {
+    color: var(--Dark-Blue);
+    font-weight: 400;
+}
+
+p {
+    color: var(--Grayish-Blue);
+    font-weight: 300;
+}
+
+.model-list{
+    background-color: var(--White);
+    color: var(--Dark-Blue);
+    border-radius: 5px;
+}
+
+.mobile-nav-conatainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+}
+
+.hamburder-btn {
+    border: 0px;
+    background-color: var(--White);
+}
+
+
+
+.web-nav-container {
+    display: none;
+}
+
+.nxt-gen-dgt-banking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./images/bg-intro-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+    overflow: clip;
+}
+
+.mockup-img-container {
+    margin-top: -35%;
+}
+
+.mockup-img {
+    width: 100%;
+}
+
+.nxt-gen-dgt-banking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+}
+
+.invite-btn {
+    border-radius: 16px;
+    border: 0px;
+    padding: 8px;
+    color: var(--White);
+    background-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+}
+
+.why-choose-easybank-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--Light-Grayish-Blue);
+}
+
+.why-choose-easybank {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+}
+
+.easy-banking-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.articles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Public Sans', sans-serif;
+    background-color: var(--Very-Light-Gray);
+    font-size: 18px;
+
+}
+
+.articles-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--White);
+    margin-bottom: 20px;
+    font-size: 18px;
+
+}
+
+.article-img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.article-content {
+    font-family: 'Public Sans', sans-serif;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--White);
+    background-color: var(--Dark-Blue);
+}
+
+.footer-logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.social-media-icons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    margin-top: 20px;
+    margin-bottom: 26px;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 130%;
+    margin-bottom: 30px;
+}
+
+ul {
+    text-align: center;
+    color: var(--Very-Light-Gray);
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+}
+
+li {
+    margin-bottom: 16px;
+}
+
+.footer-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-invite-btn {
+    font-family: 'Public Sans', sans-serif;
+    border-radius: 16px;
+    border: 0px;
+    padding: 8px;
+    color: var(--White);
+    background-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+    margin-bottom: 10px;
+}
+
+.copy-right {
+    font-family: 'Public Sans', sans-serif;
+    color: var(--Grayish-Blue);
+    font-size: 18px;
+}
+
+footer.img:hover {}
+
+
+
+@media all and (min-width:767px) {
+
+    html,
+    body {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    header {
+        background-color: var(--White);
+    }
+
+    .mobile-nav-conatainer {
+        display: none;
+    }
+
+    .web-nav-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 100%;
+        box-sizing: border-box;
+        height: 10vh;
+        padding: 0px;
+    }
+
+
+    .easy-bank-logo-container {
+        display: flex;
+        align-items: center;
+        width: 15vw;
+    }
+
+    .easy-bank-logo {
+        width: 100%;
+    }
+
+    .web-nav-list {
+        display: flex;
+        justify-content: space-between;
+        width: 30vw;
+        align-self: center;
+        align-items: center;
+        margin: 0px 10px;
+        list-style: none;
+    }
+
+    .list-item {
+        color: var(--Dark-Blue);
+        font-family: 'Public Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        padding-bottom: 12px;
+        margin: 0px;
+    }
+
+    .list-item:hover {
+        cursor: pointer;
+        border-bottom: 3px solid var(--Lime-Green);
+    }
+
+    .invite-btn {
+        border-radius: 20px;
+        border: 0px;
+        font-size: 60%;
+        padding: 1%;
+        font-weight: 300;
+        width: 10vw;
+        font-family: 'Public Sans', sans-serif;
+        color: var(--White);
+        cursor: pointer;
+        background-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+    }
+
+    .nxt-gen-dgt-banking-container {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        background-image: url('./images/bg-intro-desktop.svg');
+        background-color: var(--Very-Light-Gray);
+        background-repeat: no-repeat;
+        background-position: 55vw -9.5vw;
+        background-size: 55vw;
+        padding: 10px;
+    }
+
+    .mockup-img-container {
+        width: 20vw;
+        margin-top: -8vw;
+        margin-right: -8vw;
+        height: auto;
+    }
+
+    .mockup-img {
+        width: 31.8vw;
+        height: 55vw;
+    }
+
+    .nxt-gen-dgt-banking {
+        flex-direction: column;
+        align-items: flex-start;
+        font-family: 'Public Sans', sans-serif;
+        font-size: 18px;
+        width: 30vw;
+    }
+
+    .why-choose-easybank-container {
+        padding: 30px;
+        align-items: flex-start;
+        margin-top: -6vw;
+        overflow: clip;
+    }
+
+    .why-choose-easybank {
+        align-items: flex-start;
+        width: 40vw;
+    }
+
+    .easy-banking-icons-container {
+        display: flex;
+    }
+
+    .easy-banking-icon {
+        align-items: flex-start;
+        text-align: start;
+        width: 24vw;
+        font-size: 100%;
+        text-align: left;
+    }
+
+    .articles-container {
+        align-items: flex-start;
+        padding: 30px;
+    }
+
+    .articles-list {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0px;
+    }
+
+    .article {
+        width: 22vw;
+        font-size: 50%;
+        margin: .75vw;
+    }
+
+    .article-img {
+        width: 100%;
+        height: 200px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .footer-logo-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        width: 50%;
+        margin: 0px;
+    }
+
+    .social-media-icons-container {
+        width: 20vw;
+    }
+
+    .footer-logo {
+        width: 13vw;
+    }
+
+    .social-media-icons {
+        width: 15vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .icon {
+        width: 15%;
+        height: 15%;
+    }
+
+    ul {
+        text-align: left;
+    }
+
+    li {
+        font-size: 70%;
+        margin-bottom: 10px;
+    }
+
+    .icon:hover {
+        filter: invert(91%) sepia(54%) saturate(701%) hue-rotate(58deg) brightness(108%) contrast(92%);
+     }
+
+    .footer-list-item:hover {
+        color: var(--Lime-Green);
+    }
+
+    .footer-btn-container {
+        align-items: flex-end;
+    }
+
+    .footer-invite-btn {
+        padding: 2.5%;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    .copy-right {
+        font-size: 100%;
+        margin: 0px;
+    }
+
+}
